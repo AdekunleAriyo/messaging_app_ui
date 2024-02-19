@@ -57,5 +57,39 @@ List<User> favorites = [Kunle, Mia, Drury, Mia, Greg];
 // Example chats on home screen
 
 List<Message> chats = [
-  Message(Kunle, '5:30 PM', 'Hey, how\'s it going', false, true)
+  Message(
+    Kunle,
+    '5:30 PM',
+    'Hey, how\'s it going',
+    false,
+    true,
+  ),
+  Message(
+    Greg,
+    '4:30 PM',
+    'Hey, how\'s it going',
+    false,
+    true,
+  ),
+  Message(
+    Mia,
+    '5:30 PM',
+    'Hey, how\'s it going',
+    false,
+    true,
+  ),
+  Message(
+    Riley,
+    '5:30 PM',
+    'Hey, how\'s it going',
+    false,
+    true,
+  ),
+  Message(
+    Drury,
+    '5:30 PM',
+    'Hey, how\'s it going',
+    false,
+    true,
+  )
 ];
