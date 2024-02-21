@@ -13,43 +13,43 @@ class Message {
 final User currentUser = User(
   0,
   'Current User',
-  'assets/Clay',
+  'assets/Clay.jpg',
 );
 
 final User Greg = User(
   1,
   'Greg',
-  'assets/greg',
+  'assets/greg.jpg',
 );
 
 final User Drury = User(
   2,
   'Drury',
-  'assets/drury',
+  'assets/drury.jpg',
 );
 
 final User Riley = User(
   3,
   'Riley',
-  'assets/Riley',
+  'assets/Riley.jpg',
 );
 
 final User Mia = User(
   4,
   'Mia',
-  'assets/Mia',
+  'assets/Mia.jpg',
 );
 
 final User Kunle = User(
   5,
   'Kunle',
-  'assets/Kunle',
+  'assets/Kunle.jpg',
 );
 
 final User agba = User(
   6,
   'Agba',
-  'assets/agba',
+  'assets/agba.jpg',
 );
 
 List<User> favorites = [Kunle, Mia, Drury, Mia, Greg];
