@@ -1,6 +1,10 @@
+import 'dart:convert';
+
 import 'package:flutter/material.dart';
+import 'package:messaging_app_ui/models/message_model.dart';
 import 'package:messaging_app_ui/widgets/category_selector.dart';
 import 'package:messaging_app_ui/widgets/favorite_contacts.dart';
+import 'package:messaging_app_ui/widgets/recent_chats.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -50,6 +54,7 @@ class HomeScreen extends StatelessWidget {
               child: Column(
                 children: <Widget>[
                   FavoriteContacts(),
+                  RecentChats(),
                 ],
               ),
             ),
