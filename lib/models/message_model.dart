@@ -52,7 +52,7 @@ final User agba = User(
   'assets/agba.jpg',
 );
 
-List<User> favorites = [Kunle, Mia, Drury, Mia, Greg];
+List<User> favorites = [Kunle, Mia, Drury, agba, Greg];
 
 // Example chats on home screen
 
@@ -83,7 +83,7 @@ List<Message> chats = [
     '5:30 PM',
     'Hey, how\'s it going',
     false,
-    true,
+    false,
   ),
   Message(
     Drury,
@@ -91,5 +91,19 @@ List<Message> chats = [
     'Hey, how\'s it going',
     false,
     true,
+  ),
+  Message(
+    Kunle,
+    '2:15 AM',
+    'Wanna come over and suck my D',
+    false,
+    true,
+  ),
+  Message(
+    agba,
+    '7:00 PM',
+    'Spend the rest of your life with me?',
+    true,
+    false,
   )
 ];
