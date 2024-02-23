@@ -1,5 +1,3 @@
-import 'dart:convert';
-
 import 'package:flutter/material.dart';
 import 'package:messaging_app_ui/models/message_model.dart';
 import 'package:messaging_app_ui/widgets/category_selector.dart';
@@ -46,7 +44,7 @@ class HomeScreen extends StatelessWidget {
           Expanded(
             child: Container(
               decoration: BoxDecoration(
-                  color: const Color.fromARGB(255, 245, 242, 215),
+                  color: Colors.white,
                   borderRadius: BorderRadius.only(
                     topLeft: Radius.circular(30),
                     topRight: Radius.circular(30),
