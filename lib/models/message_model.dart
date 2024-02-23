@@ -107,3 +107,55 @@ List<Message> chats = [
     false,
   )
 ];
+
+List<Message> messages = [
+  Message(
+    Kunle,
+    '5:30 PM',
+    'Hey, how\'s it going',
+    false,
+    true,
+  ),
+  Message(
+    currentUser,
+    '4:30 PM',
+    'I am doing good',
+    false,
+    true,
+  ),
+  Message(
+    Kunle,
+    '5:30 PM',
+    'Good to know! ',
+    false,
+    true,
+  ),
+  Message(
+    currentUser,
+    '5:30 PM',
+    'Yep',
+    false,
+    false,
+  ),
+  Message(
+    Kunle,
+    '5:30 PM',
+    'How is Grandma?',
+    false,
+    true,
+  ),
+  Message(
+    currentUser,
+    '2:15 AM',
+    'She is doing great too!',
+    false,
+    true,
+  ),
+  Message(
+    Kunle,
+    '7:00 PM',
+    'Cool!',
+    true,
+    false,
+  )
+];
