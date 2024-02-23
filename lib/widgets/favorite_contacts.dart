@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:messaging_app_ui/screens/chat_screen.dart';
 
 import '../models/message_model.dart';
 
@@ -44,25 +45,32 @@ class FavoriteContacts extends StatelessWidget {
               scrollDirection: Axis.horizontal,
               padding: EdgeInsets.only(left: 10),
               itemBuilder: (context, index) {
-                return Padding(
-                  padding: const EdgeInsets.all(10.0),
-                  child: Column(
-                    children: [
-                      CircleAvatar(
-                        radius: 35,
-                        backgroundImage: AssetImage(
-                          favorites[index].imageUrl,
+                return GestureDetector(
+                  onTap: () => Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (_) => ChatScreen(user: favorites[index]),
+                      )),
+                  child: Padding(
+                    padding: const EdgeInsets.all(10.0),
+                    child: Column(
+                      children: [
+                        CircleAvatar(
+                          radius: 35,
+                          backgroundImage: AssetImage(
+                            favorites[index].imageUrl,
+                          ),
                         ),
-                      ),
-                      SizedBox(height: 6.0),
-                      Text(
-                        favorites[index].name,
-                        style: TextStyle(
-                            color: Colors.blueGrey,
-                            fontWeight: FontWeight.w600,
-                            fontSize: 16),
-                      )
-                    ],
+                        SizedBox(height: 6.0),
+                        Text(
+                          favorites[index].name,
+                          style: TextStyle(
+                              color: Colors.blueGrey,
+                              fontWeight: FontWeight.w600,
+                              fontSize: 16),
+                        )
+                      ],
+                    ),
                   ),
                 );
               },
